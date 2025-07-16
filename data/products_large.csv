@@ -1,0 +1,26 @@
+product_id,product_name,category,cost_price,selling_price,sku,inventory
+PROD001,Azure Journal,Journal,133.65,244.5,Yt-75741,164
+PROD002,Gainsboro Notebook,Notebook,140.28,271.0,Ak-48739,236
+PROD003,OliveDrab Planner,Planner,92.83,198.85,Ip-25918,219
+PROD004,CornflowerBlue Planner,Planner,111.73,169.96,pW-24977,293
+PROD005,PowderBlue Notebook,Notebook,104.6,190.67,mO-77244,137
+PROD006,Linen Planner,Planner,133.76,257.23,HF-35497,115
+PROD007,FireBrick Journal,Journal,87.21,180.72,vz-96571,457
+PROD008,Linen Notebook,Notebook,102.81,200.95,Kd-38029,455
+PROD009,Ivory Planner,Planner,117.29,208.84,sE-48042,261
+PROD010,PeachPuff Notebook,Notebook,123.46,232.54,aM-00094,296
+PROD011,Coral Planner,Planner,84.62,139.26,Ai-65737,405
+PROD012,LightSlateGray Journal,Journal,110.18,240.87,xq-26622,340
+PROD013,DeepSkyBlue Planner,Planner,118.12,196.71,dM-03693,389
+PROD014,DarkBlue Journal,Journal,85.45,183.85,Dp-40152,343
+PROD015,DarkMagenta Planner,Planner,88.0,168.72,te-17226,216
+PROD016,LightGoldenRodYellow Journal,Journal,86.84,157.32,aO-75690,207
+PROD017,Coral Planner,Planner,84.87,133.77,nv-84293,466
+PROD018,Wheat Journal,Journal,133.99,236.52,KI-47422,303
+PROD019,LemonChiffon Journal,Journal,126.21,197.31,YE-59667,468
+PROD020,DarkBlue Notebook,Notebook,142.11,303.02,kB-53902,375
+PROD021,DodgerBlue Notebook,Notebook,133.0,261.03,ac-47365,281
+PROD022,Green Journal,Journal,100.41,193.88,cT-29909,278
+PROD023,Chartreuse Notebook,Notebook,94.4,199.58,Pt-64761,203
+PROD024,LimeGreen Journal,Journal,135.6,267.9,VT-27873,272
+PROD025,MediumOrchid Journal,Journal,148.78,259.02,Pp-54042,95
