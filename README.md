@@ -38,7 +38,7 @@ FROM monthly_data;
 | 1002     | 2024-01-16  | 89.00        |
 | 1003     | 2024-01-17  | 150.75       |
 
-*Result preview:* [`/output/business_overview.csv`](output/business overview.csv)
+*Result preview:* [`/output/business_overview.csv1`](output/business_overview.csv)
 
 #### Dashboard
 Explore the interactive view here: **[Business Overview Dashboard](https://public.tableau.com/views/BusinessOverview_17529259584830/BusinessOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
