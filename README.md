@@ -53,6 +53,51 @@ The analysis confirms a pronounced holiday surge in November-December, with AOV 
 Cancelled or returned orders erode revenue and inflate logistics costs; industry benchmarks place e-commerce return rates above 16 percent. Understanding when and where these events spike is essential for operational efficiency.
 
 #### SQL Excerpt
+```sql
+WITH monthly_base AS (
+  SELECT
+    DATE_FORMAT(order_datetime, '%Y-%m') AS month,
+    COUNT(DISTINCT order_id) AS total_orders,
+    COUNT(DISTINCT CASE WHEN status = 'Returned' THEN order_id END) AS returned_orders,
+    COUNT(DISTINCT CASE WHEN status = 'Cancelled' THEN order_id END) AS cancelled_orders
+  FROM orders
+  GROUP BY DATE_FORMAT(order_datetime, '%Y-%m')
+),
+  SELECT
+    month,
+    total_orders,
+    returned_orders,
+    cancelled_orders,
+    ROUND(returned_orders / total_orders * 100, 2) AS return_pct,
+    ROUND(cancelled_orders / total_orders * 100, 2) AS cancel_pct
+  FROM monthly_base
+```
+
+#### 📈 Output Preview: Fulfillment Analysis
+
+| month   | total_orders | returned_orders | cancelled_orders | return_pct | cancel_pct |
+|---------|--------------|------------------|-------------------|------------|-------------|
+| 2024-01 | 487          | 55               | 49                | 11.29      | 10.06       |
+| 2024-02 | 435          | 36               | 51                | 8.28       | 11.72       |
+| 2024-03 | 465          | 55               | 48                | 11.83      | 10.32       |
+| 2024-04 | 446          | 41               | 51                | 9.19       | 11.43       |
+
+*Result preview:* [`/output/fulfillment_status.csv`](output/returns_cancellations_monthly.csv)
+
+#### Dashboard
+Visual details are available in **[Fulfillment Analysis Dashboard]([<your-Tableau-link-2>](https://public.tableau.com/views/FulfillmentAnalysis_17529260505260/FulfillmentDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link))**
+
+#### Business Implications
+Return and cancellation volumes peak immediately after the holiday surge—classic “January remorse.” The data recommends enhancing fit guides and size charts before the next seasonal promotion, and implementing automated return-label workflows to cut processing costs and protect customer satisfaction.
+
+### Chapter 3 – Customer Analysis
+
+#### Rationale
+Retaining an existing buyer is typically five times less costly than acquiring a new one. A rising proportion of repeat customers is therefore a leading indicator of sustainable lifetime value (LTV).
+
+#### SQL Excerpt
+
+
 
 
 
