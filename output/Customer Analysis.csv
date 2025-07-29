@@ -1,0 +1,15 @@
+order_month,customer_type,total_orders
+2024-01,New,393
+2024-01,Repeat,94
+2024-02,New,217
+2024-02,Repeat,218
+2024-03,New,145
+2024-03,Repeat,320
+2024-04,New,90
+2024-04,Repeat,356
+2024-05,New,54
+2024-05,Repeat,421
+2024-06,New,34
+2024-06,Repeat,448
+2024-07,New,12
+2024-07,Repeat,198
