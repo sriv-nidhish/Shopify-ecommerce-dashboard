@@ -32,11 +32,12 @@ FROM monthly_data;
 
 #### 📈 Output Preview: Business Overview
 
-| order_id | order_date  | total_amount |
-|----------|-------------|--------------|
-| 1001     | 2024-01-15  | 124.99       |
-| 1002     | 2024-01-16  | 89.00        |
-| 1003     | 2024-01-17  | 150.75       |
+| month   | total_orders | total_revenue | avg_order_value | revenue_growth_pct | order_growth_pct | aov_growth_pct |
+|---------|--------------|----------------|------------------|---------------------|-------------------|----------------|
+| 2024-01 | 487          | 614667.95      | 1262.15          | NULL                | NULL              | NULL           |
+| 2024-02 | 435          | 558606.98      | 1284.15          | -9.12               | -10.68            | 1.74           |
+| 2024-03 | 465          | 603887.86      | 1298.68          | 8.11                | 6.90              | 1.13           |
+| 2024-04 | 446          | 590194.54      | 1323.31          | -2.27               | -4.09             | 1.90           |
 
 *Result preview:* [`/output/business_overview.csv1`](output/business_overview.csv)
 
