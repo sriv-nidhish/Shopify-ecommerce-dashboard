@@ -40,7 +40,7 @@ FROM monthly_data;
 | 2024-03 | 465          | 603887.86      | 1298.68          | 8.11                | 6.90              | 1.13           |
 | 2024-04 | 446          | 590194.54      | 1323.31          | -2.27               | -4.09             | 1.90           |
 
-*Result preview:* [`/output/business_overview.csv1`](https://github.com/sriv-nidhish/Shopify-ecommerce-dashboard/blob/0cdc56c8b19db96a78bff5af57c4f0c71399352c/output/business%20overview.csv)
+*Result preview:* [`/output/business_overview.csv`](output/business_overview.csv)
 
 #### Dashboard
 Explore the interactive view here: **[Business Overview Dashboard](https://public.tableau.com/views/BusinessOverview_17529259584830/BusinessOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
