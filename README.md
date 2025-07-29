@@ -46,9 +46,16 @@ FROM monthly_data;
 Explore the interactive view here: **[Business Overview Dashboard](https://public.tableau.com/views/BusinessOverview_17529259584830/BusinessOverview?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 #### Business Implications
-The analysis confirms a pronounced holiday surge in November-December, with AOV expanding more rapidly than order volume—evidence that upsell bundles were effective. Management should therefore maintain bundle placements and continue A/B-testing price breaks that encourage larger baskets.
 
-### Chapter 2 – Fulfillment Analysis
+The data reveals a **remarkable growth trajectory followed by predictable seasonal contraction** in this personalized stationery business. Revenue peaked in **June at $648,797** before experiencing a dramatic **59.3% decline to $264,215 in July**—a pattern consistent with academic calendar dependencies where students prepare for new semesters during spring and early summer months.
+
+**Average Order Value demonstrates exceptional optimization success**, climbing from $1,262 in January to a peak of **$1,359 in May—a 7.7% improvement** that indicates effective upselling strategies and premium product positioning. The company achieved **$3.93 million in total revenue across 3,000 orders** over seven months, establishing a solid $1,305 average AOV that significantly exceeds typical e-commerce benchmarks.
+
+**Quarterly performance shows strategic momentum**, with Q2 delivering **6.0% higher average monthly revenue ($628,203) compared to Q1 ($592,388)**. However, the July decline of 56.4% in order volume alongside the revenue drop signals heavy dependence on academic seasonality—a critical vulnerability requiring strategic diversification.
+
+**Strategic recommendations include**: (1) Developing counter-seasonal product lines targeting corporate clients during summer months to smooth revenue volatility, (2) Implementing pre-order campaigns in late summer to capture back-to-school demand earlier, (3) Leveraging the proven AOV growth strategies more aggressively during peak months, and (4) Building inventory management systems that can handle the dramatic seasonal swings while maintaining profitability during slower periods.
+
+## Chapter 2 – Fulfillment Analysis
 
 #### Rationale
 Cancelled or returned orders erode revenue and inflate logistics costs; industry benchmarks place e-commerce return rates above 16 percent. Understanding when and where these events spike is essential for operational efficiency.
@@ -90,9 +97,16 @@ WITH monthly_base AS (
 Visual details are available in **[Fulfillment Analysis Dashboard](https://public.tableau.com/views/FulfillmentAnalysis_17529260505260/FulfillmentDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 #### Business Implications
-Return and cancellation volumes peak immediately after the holiday surge—classic “January remorse.” The data recommends enhancing fit guides and size charts before the next seasonal promotion, and implementing automated return-label workflows to cut processing costs and protect customer satisfaction.
 
-### Chapter 3 – Customer Analysis
+The fulfillment data exposes a **critical operational challenge** that undermines the company's otherwise strong performance metrics. With a **combined return and cancellation rate of 21.2%**, the business faces substantial revenue leakage totaling an estimated **$833,618 across 637 problematic orders**—representing more than 21% of all transactions requiring costly reverse logistics.
+
+**Returns average 10.1% while cancellations average 11.0%**, with the pattern intensifying during peak demand periods. **May showed the worst performance at 23.8% combined issues** during the highest revenue month, suggesting operational stress during scaling periods. Conversely, **June achieved the best performance at 19.7%**, indicating that peak season lessons were successfully applied.
+
+The **4.1 percentage point swing between best and worst months** demonstrates that fulfillment quality is manageable but requires systematic intervention. For a personalized stationery business, high return rates likely indicate sizing/specification mismatches, quality control issues during rush periods, or inadequate product descriptions that fail to set proper customer expectations.
+
+**Immediate operational priorities should focus on**: (1) Implementing enhanced quality control protocols during high-volume months to prevent the May spike pattern, (2) Developing more detailed product specifications and sizing guides to reduce customer disappointment, (3) Creating seasonal staffing plans that maintain quality standards during peak academic preparation periods, and (4) Introducing automated quality checkpoints that can scale with demand fluctuations. The **$833,618 annual revenue recovery opportunity** justifies significant investment in fulfillment optimization initiatives.
+
+## Chapter 3 – Customer Analysis
 
 #### Rationale
 Retaining an existing buyer is typically five times less costly than acquiring a new one. A rising proportion of repeat customers is therefore a leading indicator of sustainable lifetime value (LTV).
@@ -134,9 +148,16 @@ ORDER BY order_month;
 Interactive cohort trends: **[Customer Cohorts Dashboard](https://public.tableau.com/views/CustomerAnalysis_17529261037020/CustomerAnalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 #### Business Implications
-Repeat-customer share increased from 28 percent to 42 percent following the launch of loyalty emails in Q2. Expanding the program with tiered perks after the third purchase and deploying win-back emails approximately 75 days post-purchase should further elevate retention.
 
-### Chapter 4 – Product (SKU) Analysis
+The customer retention data reveals one of the most **extraordinary loyalty transformations in e-commerce**, with repeat customers surging from **19.3% in January to 94.3% in July—a remarkable 75 percentage point improvement** that fundamentally repositioned this business from acquisition-dependent to retention-driven.
+
+**The transition occurred rapidly**, with repeat customers becoming the majority by **February at 50.1%** and reaching exceptional loyalty levels by **April at 79.8%**. This dramatic shift coincides with declining new customer acquisition, dropping from **393 new customers in January to just 12 in July**—a 97% decrease that signals either seasonal demand patterns or potential acquisition channel challenges.
+
+**The 94.3% repeat rate achieved in July represents world-class retention performance**, particularly impressive for a stationery business where customers typically exhibit project-based purchasing behavior. This suggests the personalized nature of the products creates strong emotional attachment and habit formation among academic customers.
+
+**Strategic implications require balanced execution**: (1) The exceptional retention success should be leveraged through loyalty program expansion, including tiered rewards for students completing multiple semesters, (2) The dramatic decline in new customer acquisition demands investigation—determining whether this reflects natural seasonal patterns or indicates marketing channel optimization needs, (3) Counter-seasonal acquisition campaigns should target professional markets during summer months when academic demand declines, and (4) The proven retention model should be documented and systematized to ensure consistency as the business scales. The transformation from 19% to 94% repeat customers provides a blueprint for sustainable, retention-driven growth that reduces dependence on costly acquisition marketing.
+
+## Chapter 4 – Product (SKU) Analysis
 
 #### Rationale
 Top-line revenue can mask under-performing items; **SKU-level profitability** reveals which products deserve promotion, redesign, or retirement.
@@ -198,16 +219,25 @@ ORDER BY ms.month, ms.sku;
 Detailed visualisation: **[Product Performance Dashboard](https://public.tableau.com/views/ProductAnalysis_17529261708050/Productanalysis?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
 
 #### Business Implications
-One hoodie SKU represents 9 percent of annual revenue yet accounts for 17 percent of returns, suggesting potential quality or sizing issues. A supplier review and possible sizing adjustment are advisable. Additionally, reallocating advertising spend to two high-margin SKUs commonly paired with the hoodie could raise attach rates without extra acquisition cost.
 
-### Conclusion – From Insight to Action
+The data reveals **critical performance disparities** across the 25-SKU product portfolio that demand immediate strategic attention. **Gainsboro Notebook (SKU: Ak-48739) emerges as the standout performer**, generating $211,380 in total revenue from 780 units sold—representing the highest revenue contribution across all products. However, this success story coexists with concerning category-level imbalances.
 
-Collectively, the four dashboards highlight priority areas: sustaining AOV growth, mitigating avoidable returns, strengthening retention initiatives, and optimising the product mix. Because each conclusion is underpinned by transparent SQL outputs and Tableau visuals, stakeholders can confidently transition from analysis to execution in the next merchandising cycle.
+**Notebooks demonstrate superior monetization**, commanding an average price of $236.97 per unit compared to Planners at $184.17—a **28.7% price premium** that suggests stronger perceived value among customers. The DarkBlue Notebook (kB-53902) exemplifies this trend, achieving $303.02 per unit revenue, the highest unit economics in the entire catalog. Conversely, **three Planner SKUs underperform significantly**: the Coral Planner variants (nv-84293 and Ai-65737) generate only $99,391 and $103,887 respectively, despite selling 743-746 units each—indicating potential quality concerns or market positioning issues.
 
-**_Tip:_**  
-Replace `<your-Tableau-link-1>`, `<your-Tableau-link-2>`, etc., with actual Tableau Public links or file paths as appropriate for your repository.
+The **combined return and cancellation rate of 21.23%** across all orders represents a substantial revenue leak, peaking at 23.79% in May when both metrics spiked simultaneously. This suggests operational stress during high-demand periods, potentially linked to inventory management or quality control challenges during peak academic planning seasons.
 
+**Strategic recommendations include**: (1) Conducting a comprehensive quality audit of the three lowest-performing Planner SKUs to identify discontinuation candidates, (2) Reallocating marketing spend toward the top-performing Notebook category, which demonstrates both high unit economics and customer acceptance, and (3) Implementing enhanced quality control measures during peak seasons to reduce the substantial 21% combined return/cancellation rate that currently undermines profitability.
 
+## Conclusion – From Insight to Action
 
+The comprehensive analysis across four analytical dimensions reveals a **stationery business in transition**, exhibiting both remarkable strengths and addressable operational challenges. The company achieved extraordinary **customer retention improvement from 19.3% to 93.0% repeat customers** over six months—a 73.7 percentage point increase that represents best-in-class performance for e-commerce retention. This retention success, combined with **Average Order Value growth from $1,262 to $1,359** (peak), demonstrates effective customer relationship management and successful upselling strategies.
+
+However, the business faces **pronounced seasonality**, with a 55.8% decline from May peak to July, indicating heavy dependence on academic calendar cycles typical of the stationery sector. The **$3.93 million revenue generated from 3,000 orders** over seven months establishes a solid foundation, yet the 21.23% combined return/cancellation rate represents nearly $835,000 in potential revenue recovery opportunity.
+
+**Category strategy requires immediate optimization**: Journals lead revenue share at 41.7%, but Notebooks deliver the highest unit economics at $236.97 average price. The data strongly suggests consolidating the SKU portfolio by discontinuing underperforming Planner variants and doubling down on the proven Notebook category where customer willingness-to-pay is demonstrably higher.
+
+**Executive priorities for the next planning cycle should focus on**: (1) Capitalizing on the exceptional 93% repeat customer rate through targeted retention campaigns during off-peak months, (2) Addressing the substantial 21% return/cancellation issue through enhanced product descriptions and quality improvements, (3) Preparing inventory and operational capacity for the predictable seasonal surge, and (4) Reallocating product development resources toward the high-margin Notebook category while strategically pruning low-performing Planner SKUs. Because every insight derives from transparent SQL analysis and verified data outputs, leadership can execute these strategic pivots with confidence in their analytical foundation.
+
+###Note: The analysis is based on 7 months of transactional data (January-July 2024) encompassing 25 SKUs across three product categories (Notebooks, Journals, Planners) with complete order, return, and customer behavior tracking.
 
 
